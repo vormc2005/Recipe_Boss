@@ -263,7 +263,7 @@ body {
       top: 0;
       left: 0;
       background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
-      opacity: .4; }
+      opacity: .1; }
     .results__fig img,
     .likes__fig img {
       display: block;
@@ -318,7 +318,7 @@ body {
       top: 0;
       left: 0;
       background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
-      opacity: .6; }
+      opacity: 0.0; }
   .recipe__img {
     width: 100%;
     display: block;
