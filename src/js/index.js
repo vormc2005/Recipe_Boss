@@ -207,10 +207,20 @@ const controlRecipe= async ()=>{
         likeView.toggleLikeMenu(state.likes.getNumLikes())
  }
  
-/**
-  * like controller
-  */
 
+
+window.addEventListener('load', ()=>{
+    state.likes = new Likes();
+
+    state.likes.readStorage();
+
+    likeView.toggleLikeMenu(state.likes.getNumLikes());
+
+    //Render existing likes
+    state.likes.likes.forEach(like => likeView.renderLike(like));
+
+})
+ 
 
 
 //Handling recipe button clicks on the recipe to change servings size
