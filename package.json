@@ -8,6 +8,7 @@
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development --open",
     "postinstall": "webpack -p"
+    
   },
   "repository": {
     "type": "git",
