@@ -16,7 +16,8 @@ export default class Likes {
     deleteLike(id){
         const index= this.likes.findIndex(el=> el.id ===id);
         this.likes.splice(index, 1)
-        // localStorage.removeItem('likes');
+        localStorage.removeItem('likes');
+        
     }
 
     isLiked(id){
@@ -39,4 +40,7 @@ export default class Likes {
         //Resote likes from local storage
         if (storage) this.likes = storage;
     }
+
+    
+    
 }
