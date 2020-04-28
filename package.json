@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development",
+    
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open --mode production",
-    "heroku-postbuild": "webpack -p"
+    "dev": "webpack-dev-server --mode development --open --mode production",
+    "postinstall": "webpack -p",
+    "start":"node server.js"
   },
   "repository": {
     "type": "git",
