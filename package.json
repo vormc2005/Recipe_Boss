@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    
     "build": "webpack --mode production",
     "dev": "webpack-dev-server --mode development --open --mode production",
     "postinstall": "webpack -p",
-    "start":"node server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
